@@ -25,27 +25,27 @@ include("template/header.php");
 </div>
 
 <section class="section Secondsection">
-  <h2>Form</h2>
+  <h2>Ajouter un Ouvrage</h2>
   <div class="form-group">
-  <label for="exampleInputEmail1">Votre Nom</label>
-  <input type="text" class="form-control" name="name" id="formGroupExampleInput" placeholder="Votre nom">
-  <small id="emailHelp" class="form-text text-muted">Veuillez indiquer votre nom</small>
+  <label for="exampleInputEmail1">Titre de l'ouvrage</label>
+  <input type="text" class="form-control" name="name" id="formGroupExampleInput" placeholder="Titre">
+  <small id="emailHelp" class="form-text text-muted">Veuillez indiquer le titre de l'ouvrage</small>
 </div>
 
 
 
 <form class="" action="" method="post" enctype="multipart/form-data">
   <div class="form-group">
-    <label for="exampleInputEmail1">Votre Prénom</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" name="firstName" placeholder="Votre prénom">
-    <small id="emailHelp" class="form-text text-muted">Veuillez indiqer votre prénom.</small>
+    <label for="exampleInputEmail1">Genre</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" name="firstName" placeholder="Genre de l'oeuvre">
+    <small id="emailHelp" class="form-text text-muted">Veuillez indiqer le genre de l'ouvrage.</small>
   </div>
 
   <form class="" action="" method="post" enctype="multipart/form-data">
     <div class="form-group">
-      <label for="exampleInputEmail1">Sommes</label>
-      <input type="text" class="form-control" id="formGroupExampleInput" name="amount" placeholder="Ex : 1000">
-      <small id="emailHelp" class="form-text text-muted">Veuillez insérer le montant que vous souhaiter ajouter à votre compte</small>
+      <label for="exampleInputEmail1">Résumer</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" name="amount" placeholder="Résumer de l'oeuvre">
+      <small id="emailHelp" class="form-text text-muted">Veuillez insérer un court résumer.</small>
     </div>
 
 
@@ -76,32 +76,33 @@ include("template/header.php");
 </div>
 
 <section class="section Fourthsection">
-  <h2>Update</h2>
+  <h2>Emprunter/Rendre</h2>
   <div class="form-group">
-  <label for="exampleInputEmail1">Votre Nom</label>
-  <input type="text" class="form-control" name="name" id="formGroupExampleInput" placeholder="Votre nom">
-  <small id="emailHelp" class="form-text text-muted">Veuillez indiquer votre nom</small>
+  <label for="exampleInputEmail1">Titre de l'ouvrage</label>
+  <input type="text" class="form-control" name="name" id="formGroupExampleInput" placeholder="Titre">
+  <small id="emailHelp" class="form-text text-muted">Veuillez indiquer le titre de l'ouvrage</small>
 </div>
 
 
 
 <form class="" action="" method="post" enctype="multipart/form-data">
   <div class="form-group">
-    <label for="exampleInputEmail1">Votre Prénom</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" name="firstName" placeholder="Votre prénom">
-    <small id="emailHelp" class="form-text text-muted">Veuillez indiqer votre prénom.</small>
+    <label for="exampleInputEmail1">Genre</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" name="firstName" placeholder="Genre de l'oeuvre">
+    <small id="emailHelp" class="form-text text-muted">Veuillez indiqer le genre de l'ouvrage.</small>
   </div>
 
   <form class="" action="" method="post" enctype="multipart/form-data">
     <div class="form-group">
-      <label for="exampleInputEmail1">Sommes</label>
-      <input type="text" class="form-control" id="formGroupExampleInput" name="amount" placeholder="Ex : 1000">
-      <small id="emailHelp" class="form-text text-muted">Veuillez insérer le montant que vous souhaiter ajouter à votre compte</small>
+      <label for="exampleInputEmail1">Résumer</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" name="amount" placeholder="Résumer de l'oeuvre">
+      <small id="emailHelp" class="form-text text-muted">Veuillez insérer un court résumer.</small>
     </div>
 
 
 
-    <button type="submit" name="send" class="btn btn-primary">Envoyer</button>
+    <button type="submit" name="send" class="btn btn-primary">Emprunter</button>
+    <button type="submit" name="send" class="btn btn-primary">Rendre</button>
   <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
 </section>
 
