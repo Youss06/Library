@@ -8,5 +8,14 @@
   </head>
   <body>
     <header>
-
+       <div class="navbar">
+         <ul>
+          <a href="#ouvrage">OUVRAGE</a>
+          <a href="#ajout"> AJOUT</a>
+          <a href="#description">DESCRIPTION</a>
+          <a href="#rendre">RENDRE</a>
+          <a href="#utilisateur">UTILISATEUR</a>
+          <a href="#tri">TRI</a>
+        </ul>
+      </div>
     </header>

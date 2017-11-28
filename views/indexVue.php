@@ -3,6 +3,9 @@ include("template/header.php");
 
 ?>
 
+
+
+
 <div class="img1">
    <div class="text">
        <span class="border">
@@ -11,8 +14,8 @@ include("template/header.php");
    </div>
 </div>
 
-<section class="section Firstsection">
-  <h2>Nos Livres</h2>
+<section class="section Firstsection" id="ouvrage">
+  <h2>Ouvrage</h2>
   <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
 </section>
 
@@ -24,7 +27,7 @@ include("template/header.php");
    </div>
 </div>
 
-<section class="section Secondsection">
+<section class="section Secondsection" id="ajout">
   <h2>Ajouter un Ouvrage</h2>
   <div class="form-group">
   <label for="exampleInputEmail1">Titre de l'ouvrage</label>
@@ -62,7 +65,7 @@ include("template/header.php");
    </div>
 </div>
 
-<section class="section Thirdsection">
+<section class="section Thirdsection" id="description">
   <h2>Description</h2>
   <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
 </section>
@@ -75,7 +78,7 @@ include("template/header.php");
    </div>
 </div>
 
-<section class="section Fourthsection">
+<section class="section Fourthsection" id="rendre">
   <h2>Emprunter/Rendre</h2>
   <div class="form-group">
   <label for="exampleInputEmail1">Titre de l'ouvrage</label>
@@ -114,7 +117,7 @@ include("template/header.php");
    </div>
 </div>
 
-<section class="section Fifthsection">
+<section class="section Fifthsection" id="utilisateur">
   <h2>Utilisateurs</h2>
   <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
 </section>
@@ -127,7 +130,7 @@ include("template/header.php");
    </div>
 </div>
 
-<section class="section Sixthsection">
+<section class="section Sixthsection" id="tri">
   <h2>Tri</h2>
   <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
 </section>
