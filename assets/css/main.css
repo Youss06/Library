@@ -22,7 +22,7 @@ body, html {
   color: #666;
 }
 
-.img1, .img2, .img3 {
+.img1, .img2, .img3, .img4, .img5, .img6 {
   position: relative;
   opacity: 0.70;
   background-position: center;
@@ -47,6 +47,21 @@ body, html {
   min-height: 400px;
 }
 
+.img4 {
+  background-image: url("../img/image4.jpg");
+  min-height: 400px;
+}
+
+.img5 {
+  background-image: url("../img/image5.jpeg");
+  min-height: 400px;
+}
+
+.img6 {
+  background-image: url("../img/image6.jpeg");
+  min-height: 400px;
+}
+
 .section {
   text-align: center;
   padding: 50px 80px;
@@ -58,6 +73,16 @@ body, html {
 }
 
 .Secondsection {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.Fourthsection{
+  background-color: #79A4D6;
+  color: #ddd;
+}
+
+.Fifthsection {
   background-color: #282e34;
   color: #ddd;
 }
