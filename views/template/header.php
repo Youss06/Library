@@ -12,12 +12,12 @@
     <header>
        <div class="navbar">
          <ul>
-          <a href="#ouvrage">OUVRAGE</a>
-          <a href="#ajout"> AJOUT</a>
-          <a href="#description">DESCRIPTION</a>
-          <a href="#rendre">RENDRE</a>
-          <a href="#utilisateur">UTILISATEUR</a>
-          <a href="#tri">TRI</a>
+          <li><a href="#ouvrage">OUVRAGE</a></li>
+          <li><a href="#ajout"> AJOUT</a></li>
+          <li><a href="#description">DESCRIPTION</a></li>
+          <li><a href="#rendre">RENDRE</a></li>
+          <li><a href="#utilisateur">UTILISATEUR</a></li>
+          <li><a href="#tri">TRI</a></li>
         </ul>
       </div>
     </header>

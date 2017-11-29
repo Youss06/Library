@@ -14,11 +14,24 @@ ul {
 }
 
 ul a {
-  padding: 1%;
+  /*padding: 1%;*/
   color: white;
 }
 
+.navbar ul li a {
+  text-decoration: none;
+  padding: 10px;
+}
 
+
+.navbar ul li{
+list-style-type: none;
+display: inline-block;
+}
+
+.navbar ul li :hover{
+  background-color: #f39d1a;
+}
 
 body, html {
   height: 100%;
