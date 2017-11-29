@@ -13,6 +13,11 @@ ul {
   margin: 2px;
 }
 
+ul a {
+  padding: 1%;
+  color: white;
+}
+
 
 
 body, html {
