@@ -31,7 +31,7 @@ include("template/header.php");
   <h2>Ajouter un Ouvrage</h2>
   <div class="form-group">
   <label for="exampleInputEmail1">Titre de l'ouvrage</label>
-  <input type="text" class="form-control" name="name" id="formGroupExampleInput" placeholder="Titre">
+  <input type="text" class="form-control" name="title" id="formGroupExampleInput" placeholder="Titre">
   <small id="emailHelp" class="form-text text-muted">Veuillez indiquer le titre de l'ouvrage</small>
 </div>
 
@@ -40,14 +40,14 @@ include("template/header.php");
 <form class="" action="" method="post" enctype="multipart/form-data">
   <div class="form-group">
     <label for="exampleInputEmail1">Auteur</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" name="firstName" placeholder="Auteur de l'oeuvre">
+    <input type="text" class="form-control" id="formGroupExampleInput" name="author" placeholder="Auteur de l'oeuvre">
     <small id="emailHelp" class="form-text text-muted">Veuillez indiqer l'auteur de l'ouvrage.</small>
   </div>
 
   <form class="" action="" method="post" enctype="multipart/form-data">
     <div class="form-group">
       <label for="exampleInputEmail1">Genre</label>
-      <input type="text" class="form-control" id="formGroupExampleInput" name="amount" placeholder="Genre de l'oeuvre">
+      <input type="text" class="form-control" id="formGroupExampleInput" name="category" placeholder="Genre de l'oeuvre">
       <small id="emailHelp" class="form-text text-muted">Veuillez indiquer le genre de l'oeuvre.</small>
     </div>
 
@@ -55,8 +55,8 @@ include("template/header.php");
     <form class="" action="" method="post" enctype="multipart/form-data">
       <div class="form-group">
         <label for="exampleInputEmail1">Souhaitez-vous l'emprunter</label><br>
-        <label class="radio-inline"><input type="radio" name="optradio">OUI</label>
-        <label class="radio-inline"><input type="radio" name="optradio">NON</label>
+        <label class="radio-inline"><input type="radio" name="available">OUI</label>
+        <label class="radio-inline"><input type="radio" name="available">NON</label>
       </div>
 
 
