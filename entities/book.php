@@ -22,4 +22,77 @@ public function __construct(array $data){
     }
    }
   }
+
+
+// SETTERS
+  public function getId()
+    {
+      return $this->id;
+    }
+
+// Setters  and Getters
+    public function setId($id)
+    {
+      $id = (int)$id;
+      if ($id > 0)
+      {
+        $this->id = $id;
+      }
+    }
+
+    public function getTitle()
+    {
+      return $this->title;
+    }
+
+    public function setTitle($title)
+    {
+      if (is_string($title))
+      {
+        $this->title = $title;
+      }
+    }
+
+
+    public function getCategory()
+    {
+      return $this->category;
+    }
+
+    public function setCategory($category)
+    {
+      if (is_string($category))
+      {
+        $this->category = $category;
+      }
+    }
+
+    public function getAuthor()
+    {
+      return $this->author;
+    }
+
+    public function setAuthor($author)
+    {
+      if (is_string($author))
+      {
+        $this->author = $author;
+      }
+    }
+
+    public function getAuthor()
+    {
+      return $this->author;
+    }
+
+
+    public function setAvailable($available)
+    {
+      if (is_string($available))
+      {
+        $this->available = $available;
+      }
+    }
+
+
 }
