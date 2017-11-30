@@ -80,9 +80,9 @@ public function __construct(array $data){
       }
     }
 
-    public function getAuthor()
+    public function getAvailable()
     {
-      return $this->author;
+      return $this->available;
     }
 
 
