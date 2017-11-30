@@ -39,18 +39,25 @@ include("template/header.php");
 
 <form class="" action="" method="post" enctype="multipart/form-data">
   <div class="form-group">
-    <label for="exampleInputEmail1">Genre</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" name="firstName" placeholder="Genre de l'oeuvre">
-    <small id="emailHelp" class="form-text text-muted">Veuillez indiqer le genre de l'ouvrage.</small>
+    <label for="exampleInputEmail1">Auteur</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" name="firstName" placeholder="Auteur de l'oeuvre">
+    <small id="emailHelp" class="form-text text-muted">Veuillez indiqer l'auteur de l'ouvrage.</small>
   </div>
 
   <form class="" action="" method="post" enctype="multipart/form-data">
     <div class="form-group">
-      <label for="exampleInputEmail1">Résumé</label>
-      <input type="text" class="form-control" id="formGroupExampleInput" name="amount" placeholder="Résumé de l'oeuvre">
-      <small id="emailHelp" class="form-text text-muted">Veuillez insérer un court résumé.</small>
+      <label for="exampleInputEmail1">Genre</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" name="amount" placeholder="Genre de l'oeuvre">
+      <small id="emailHelp" class="form-text text-muted">Veuillez indiquer le genre de l'oeuvre.</small>
     </div>
 
+
+    <form class="" action="" method="post" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Souhaitez-vous l'emprunter</label><br>
+        <label class="radio-inline"><input type="radio" name="optradio">OUI</label>
+        <label class="radio-inline"><input type="radio" name="optradio">NON</label>
+      </div>
 
 
     <button type="submit" name="send" class="btn btn-primary">Envoyer</button>
