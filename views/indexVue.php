@@ -46,9 +46,9 @@ include("template/header.php");
 
   <form class="" action="" method="post" enctype="multipart/form-data">
     <div class="form-group">
-      <label for="exampleInputEmail1">Résumer</label>
-      <input type="text" class="form-control" id="formGroupExampleInput" name="amount" placeholder="Résumer de l'oeuvre">
-      <small id="emailHelp" class="form-text text-muted">Veuillez insérer un court résumer.</small>
+      <label for="exampleInputEmail1">Résumé</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" name="amount" placeholder="Résumé de l'oeuvre">
+      <small id="emailHelp" class="form-text text-muted">Veuillez insérer un court résumé.</small>
     </div>
 
 
@@ -97,9 +97,9 @@ include("template/header.php");
 
   <form class="" action="" method="post" enctype="multipart/form-data">
     <div class="form-group">
-      <label for="exampleInputEmail1">Résumer</label>
-      <input type="text" class="form-control" id="formGroupExampleInput" name="amount" placeholder="Résumer de l'oeuvre">
-      <small id="emailHelp" class="form-text text-muted">Veuillez insérer un court résumer.</small>
+      <label for="exampleInputEmail1">Résumé</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" name="amount" placeholder="Résumé de l'oeuvre">
+      <small id="emailHelp" class="form-text text-muted">Veuillez insérer un court résumé.</small>
     </div>
 
 
