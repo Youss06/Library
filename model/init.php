@@ -3,7 +3,7 @@
 // Connect to DataBase
 try
 {
-  $db = new PDO('mysql:host=localhost;dbname=exobanque;charset=utf8', 'root', 'root');
+  $db = new PDO('mysql:host=localhost;dbname=Library;charset=utf8', 'root', 'root');
 }
 catch(Exception $e)
 {

@@ -2,6 +2,10 @@ h1 {
   text-align: center;
 }
 
+.row {
+  display: inline-block;
+}
+
 .navbar {
 padding: 0;
 background-color: black;

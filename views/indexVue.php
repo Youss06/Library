@@ -16,7 +16,28 @@ include("template/header.php");
 
 <section class="section Firstsection" id="ouvrage">
   <h2>Ouvrage</h2>
-  <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+
+<div class="container">
+ <div class="row">
+   <?php foreach ($ShowBook as $info) {
+       ?>
+  <div  class="col-lg-4">
+  <div class="card" style="width: 20rem;">
+  <div class="card-block">
+    <h3 class="card-title"><?php echo $info->getTitle(); ?></h3>
+    <p class="card-text">Auteur : <?php echo $info->getAuthor(); ?></p>
+    <p class="card-text">Genre : <?php echo $info->getCategory(); ?></p>
+    <p class="card-text">Disponible : <?php echo $info->getAvailable(); ?></p>
+    <a href="#description" class="btn btn-primary">Détail de l'oeuvre</a>
+  </div>
+ </div>
+</div>
+
+<?php
+  }
+ ?>
+ </div>
+</div>
 </section>
 
 <div class="img2">
@@ -29,6 +50,9 @@ include("template/header.php");
 
 <section class="section Secondsection" id="ajout">
   <h2>Ajouter un Ouvrage</h2>
+
+<form class="" action="../controllers/index.php" method="post" enctype="multipart/form-data">
+
   <div class="form-group">
   <label for="exampleInputEmail1">Titre de l'ouvrage</label>
   <input type="text" class="form-control" name="title" id="formGroupExampleInput" placeholder="Titre">
@@ -55,8 +79,10 @@ include("template/header.php");
     <form class="" action="" method="post" enctype="multipart/form-data">
       <div class="form-group">
         <label for="exampleInputEmail1">Souhaitez-vous l'emprunter</label><br>
-        <label class="radio-inline"><input type="radio" name="available">OUI</label>
-        <label class="radio-inline"><input type="radio" name="available">NON</label>
+        <input class="with-gap" name="available" type="radio" value="NON" id="test1" />
+           <label for="test1">OUI</label>
+           <input class="with-gap" name="available" type="radio" value="OUI" id="test1" />
+              <label for="test1">NON</label>
       </div>
 
 
@@ -74,7 +100,24 @@ include("template/header.php");
 
 <section class="section Thirdsection" id="description">
   <h2>Description</h2>
-  <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+
+<div class="container">
+ <div class="row">
+   <?php foreach ($ShowBook as $info) {
+       ?>
+  <div  class="col-sm-4">
+  <div class="card" style="width: 20rem;">
+  <div class="card-block">
+    <p class="card-text">Résumé : <?php echo $info->getSummary(); ?></p>
+  </div>
+ </div>
+</div>
+
+<?php
+  }
+ ?>
+ </div>
+</div>
 </section>
 
 <div class="img4">
