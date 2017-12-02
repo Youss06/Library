@@ -169,7 +169,26 @@ include("template/header.php");
 
 <section class="section Fifthsection" id="utilisateur">
   <h2>Utilisateurs</h2>
-  <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+  <div class="container">
+   <div class="row">
+     <?php foreach ($ShowUser as $info) {
+         ?>
+    <div  class="col-lg-4">
+    <div class="card" style="width: 20rem;">
+    <div class="card-block">
+      <p class="card-text">Nom : <?php echo $info->getName(); ?></p>
+      <p class="card-text">Prénom : <?php echo $info->getFirstName(); ?></p>
+      <p class="card-text">Ville: <?php echo $info->getCity(); ?></p>
+      <p class="card-text">Identifiant : <?php echo $info->getIdnumber(); ?></p>
+    </div>
+   </div>
+  </div>
+
+  <?php
+    }
+   ?>
+   </div>
+  </div>
 </section>
 
 <div class="img6">

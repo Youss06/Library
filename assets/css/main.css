@@ -112,6 +112,10 @@ body, html {
   color: #ddd;
 }
 
+.Fifthsection p {
+  color: black;
+}
+
 .text {
   position: absolute;
   top: 50%;

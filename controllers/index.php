@@ -1,7 +1,10 @@
 <?php
 require ("../model/bookManager.php");
+require ("../model/userManager.php");
 require '../model/init.php';
 require '../entities/book.php';
+require '../entities/user.php';
+
 
 
 $BookManager = new bookManager;
@@ -18,6 +21,14 @@ if ($_POST) {
   $ShowBook = $BookManager->getShowBook();
   foreach ($ShowBook as $key => $value) {
     $ShowBook[$key] = new Book($value);
+  }
+
+
+$UserManager = new userManager;
+
+  $ShowUser = $UserManager->getUser();
+  foreach ($ShowUser as $key => $value) {
+    $ShowUser[$key] = new User($value);
   }
 
 
