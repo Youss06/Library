@@ -2,6 +2,10 @@
 
 class bookManager{
 
+protected $bd;
+
+
+
   public function getBdd(){
     $bd = new PDO('mysql:host=localhost;dbname=Library', 'root', 'root');
     return $bd;
@@ -39,6 +43,19 @@ public function ShowSummary($id){
     $data = $q->fetch();
     return $data;
 }
+
+public function try($sort)
+      {
+       $req = $this->getBdd()->prepare('SELECT * FROM Book WHERE category = :sort');
+        $req->bindValue(':sort', $sort);
+        $req->execute();
+        $donnees = $req->fetchAll(PDO::FETCH_ASSOC);
+       foreach ($donnees as $key => $value)
+        {
+          $donnees[$key] = new book($value);
+        }
+        return $donnees;
+      }
 
 
 }

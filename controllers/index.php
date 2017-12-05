@@ -8,13 +8,15 @@ require '../entities/user.php';
 
 
 $BookManager = new bookManager;
+$manager = new bookManager($bd);
 
-if ($_POST) {
+if (isset($_POST['available'])) {
   $book = new Book(
     ['title' => htmlspecialchars($_POST['title']),
     'category' =>htmlspecialchars($_POST['category']),
     'author' => htmlspecialchars($_POST['author']),
-    'available' => htmlspecialchars($_POST['available'])]);
+    'available' => htmlspecialchars($_POST['available'])
+  ]);
     $BookManager->add($book);
   }
 
@@ -36,9 +38,16 @@ $UserManager = new userManager;
     # code...
     $id = $_GET['id'];
     $summary = $BookManager->ShowSummary($id);
-    //transformer $datailVehicule [] -> object car_manager
-    $summ = new Summ($summary);
+    $book = new Book($summary);
   }
+
+
+
+
+  if(isset($_POST['search']))
+{
+  $donnees = $manager->try($_POST['sort']);
+}
 
 
   include ("../views/indexVue.php");

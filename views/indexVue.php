@@ -15,14 +15,15 @@ include("template/header.php");
 </div>
 
 <section class="section Firstsection" id="ouvrage">
-  <h2>Ouvrage</h2>
+  <h2>Ouvrages</h2>
 
 <div class="container">
  <div class="row">
    <?php foreach ($ShowBook as $info) {
        ?>
-  <div  class="col-lg-4">
-  <div class="card" style="width: 20rem;">
+
+<div class="col-lg-4">
+  <div class="card " style="width: 20rem;">
   <div class="card-block">
     <h3 class="card-title"><?php echo $info->getTitle(); ?></h3>
     <p class="card-text">Auteur : <?php echo $info->getAuthor(); ?></p>
@@ -201,5 +202,43 @@ include("template/header.php");
 
 <section class="section Sixthsection" id="tri">
   <h2>Tri</h2>
-  <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+  <!-- start div class sort -->
+ <div class="formu col-12 col-md-8 col-lg-6 sort">
+  <form action="../controllers/index.php" method="post">
+     <div class="form-group">
+ <select class="custom-select" name="sort">
+   <option selected>Open this select menu</option>
+   <option value="roman">roman</option>
+   <option value="fantastique">fantastique</option>
+   <option value="bd">bd</option>
+   <option value="action">action</option>
+ </select>
+</div>
+<input type="submit" name="search" value="search">
+</form>
+</div>
+
+<!-- <div class="container">
+ <div class="row">
+   <?php foreach ($ShowBook as $info) {
+       ?>
+
+<div class="col-lg-4">
+  <div class="card " style="width: 20rem;">
+  <div class="card-block">
+    <h3 class="card-title"><?php echo $info->getTitle(); ?></h3>
+    <p class="card-text">Auteur : <?php echo $info->getAuthor(); ?></p>
+    <p class="card-text">Genre : <?php echo $info->getCategory(); ?></p>
+    <p class="card-text">Disponible : <?php echo $info->getAvailable(); ?></p>
+    <a href="#description" class="btn btn-primary">Détail de l'oeuvre</a>
+  </div>
+ </div>
+</div>
+
+<?php
+  }
+ ?>
+ </div>
+</div> -->
+<!-- end div class sort -->
 </section>
