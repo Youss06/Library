@@ -17,6 +17,21 @@ include("template/header.php");
 <section class="section Firstsection" id="ouvrage">
   <h2>Ouvrages</h2>
 
+  <div class="formu col-12 col-md-8 col-lg-6 sort">
+   <form action="../controllers/index.php" method="post">
+      <div class="form-group">
+  <select class="custom-select" name="category">
+    <option selected>Trier par genre</option>
+    <option value="roman">roman</option>
+    <option value="fantastique">fantastique</option>
+    <option value="bd">bd</option>
+    <option value="action">action</option>
+  </select>
+ </div>
+ <input type="submit" name="search" value="search">
+ </form>
+ </div>
+
 <div class="container">
  <div class="row">
    <?php foreach ($ShowBook as $info) {
@@ -76,6 +91,13 @@ include("template/header.php");
       <small id="emailHelp" class="form-text text-muted">Veuillez indiquer le genre de l'oeuvre.</small>
     </div>
 
+    <form class="" action="" method="post" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Résumé</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" name="summary" placeholder="Résumé de l'oeuvre">
+        <small id="emailHelp" class="form-text text-muted">Entrer un court résumé de l'oeuvre.</small>
+      </div>
+
 
     <form class="" action="" method="post" enctype="multipart/form-data">
       <div class="form-group">
@@ -102,23 +124,24 @@ include("template/header.php");
 <section class="section Thirdsection" id="description">
   <h2>Description</h2>
 
-<div class="container">
- <div class="row">
-   <?php foreach ($ShowBook as $info) {
-       ?>
-  <div  class="col-sm-4">
-  <div class="card" style="width: 20rem;">
-  <div class="card-block">
-    <p class="card-text">Résumé : <?php echo $info->getSummary(); ?></p>
-  </div>
- </div>
-</div>
+  <div class="container">
+   <div class="row">
+     <?php foreach ($ShowBook as $info) {
+         ?>
 
-<?php
-  }
- ?>
- </div>
-</div>
+  <div class="col-lg-4">
+    <div class="card " style="width: 20rem;">
+    <div class="card-block">
+      <h3 class="card-title"><?php echo $info->getSummary(); ?></h3>
+    </div>
+   </div>
+  </div>
+
+  <?php
+    }
+   ?>
+   </div>
+  </div>
 </section>
 
 <div class="img4">
@@ -200,13 +223,13 @@ include("template/header.php");
    </div>
 </div>
 
-<section class="section Sixthsection" id="tri">
-  <h2>Tri</h2>
+<!-- <section class="section Sixthsection" id="tri">
+  <h2>Tri</h2> -->
   <!-- start div class sort -->
- <div class="formu col-12 col-md-8 col-lg-6 sort">
+ <!-- <div class="formu col-12 col-md-8 col-lg-6 sort">
   <form action="../controllers/index.php" method="post">
      <div class="form-group">
- <select class="custom-select" name="sort">
+ <select class="custom-select" name="category">
    <option selected>Open this select menu</option>
    <option value="roman">roman</option>
    <option value="fantastique">fantastique</option>
@@ -218,7 +241,7 @@ include("template/header.php");
 </form>
 </div>
 
-<!-- <div class="container">
+<div class="container">
  <div class="row">
    <?php foreach ($ShowBook as $info) {
        ?>
@@ -240,5 +263,5 @@ include("template/header.php");
  ?>
  </div>
 </div> -->
-<!-- end div class sort -->
+<!-- end div class sort
 </section>

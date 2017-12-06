@@ -15,7 +15,8 @@ if (isset($_POST['available'])) {
     ['title' => htmlspecialchars($_POST['title']),
     'category' =>htmlspecialchars($_POST['category']),
     'author' => htmlspecialchars($_POST['author']),
-    'available' => htmlspecialchars($_POST['available'])
+    'available' => htmlspecialchars($_POST['available']),
+    'summary' => htmlspecialchars($_POST['summary'])
   ]);
     $BookManager->add($book);
   }
@@ -46,7 +47,7 @@ $UserManager = new userManager;
 
   if(isset($_POST['search']))
 {
-  $donnees = $manager->try($_POST['sort']);
+  $donnees = $BookManager->try($_POST['category']);
 }
 
 

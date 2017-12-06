@@ -14,7 +14,7 @@ protected $bd;
   // Constructeur
 
 public function add(book $recovery ){
-  $q = $this->getBdd()->prepare('INSERT INTO Book(title, category, author, available)
+  $q = $this->getBdd()->prepare('INSERT INTO Book(title, category, author, available, summary)
   VALUES(:title, :category, :author, :available, :summary)');
 
   // HERE Call Back Getters (getTitle...)
@@ -44,17 +44,21 @@ public function ShowSummary($id){
     return $data;
 }
 
-public function try($sort)
+
+
+
+public function try($category)
       {
-       $req = $this->getBdd()->prepare('SELECT * FROM Book WHERE category = :sort');
-        $req->bindValue(':sort', $sort);
+       $req = $this->getBdd()->prepare('SELECT * FROM Book WHERE category = :category');
+        $req->bindValue(':category', $category);
         $req->execute();
-        $donnees = $req->fetchAll(PDO::FETCH_ASSOC);
-       foreach ($donnees as $key => $value)
+        $ShowBook = $req->fetchAll(PDO::FETCH_ASSOC);
+       foreach ($ShowBook as $key => $value)
         {
-          $donnees[$key] = new book($value);
+          $ShowBook[$key] = new book($value);
+
         }
-        return $donnees;
+        return $ShowBook;
       }
 
 
