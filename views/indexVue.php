@@ -18,7 +18,7 @@ include("template/header.php");
   <h2>Ouvrages</h2>
 
   <div class="formu col-12 col-md-8 col-lg-6 sort">
-   <form action="../controllers/index.php" method="post">
+   <form action="index.php" method="post">
       <div class="form-group">
   <select class="custom-select" name="category">
     <option selected>Trier par genre</option>
@@ -30,6 +30,7 @@ include("template/header.php");
  </div>
  <input type="submit" name="search" value="search">
  </form>
+ <a href="index.php">Tout les Ouvrages</a>
  </div>
 
 <div class="container">
@@ -37,8 +38,8 @@ include("template/header.php");
    <?php foreach ($ShowBook as $info) {
        ?>
 
-<div class="col-lg-4">
-  <div class="card " style="width: 20rem;">
+<div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+  <div class="card  " >
   <div class="card-block">
     <h3 class="card-title"><?php echo $info->getTitle(); ?></h3>
     <p class="card-text">Auteur : <?php echo $info->getAuthor(); ?></p>

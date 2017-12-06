@@ -7,8 +7,8 @@ require '../entities/user.php';
 
 
 
-$BookManager = new bookManager;
-$manager = new bookManager($bd);
+$BookManager = new bookManager();
+// $manager = new bookManager($bd);
 
 if (isset($_POST['available'])) {
   $book = new Book(
@@ -23,7 +23,7 @@ if (isset($_POST['available'])) {
 
   $ShowBook = $BookManager->getShowBook();
   foreach ($ShowBook as $key => $value) {
-    $ShowBook[$key] = new Book($value);
+    $ShowBook[$key] = new book($value);
   }
 
 
@@ -47,7 +47,7 @@ $UserManager = new userManager;
 
   if(isset($_POST['search']))
 {
-  $donnees = $BookManager->try($_POST['category']);
+  $ShowBook = $BookManager->try($_POST['category']);
 }
 
 
