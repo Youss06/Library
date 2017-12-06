@@ -21,12 +21,14 @@ if (isset($_POST['available'])) {
     $BookManager->add($book);
   }
 
+// Show Book
+
   $ShowBook = $BookManager->getShowBook();
   foreach ($ShowBook as $key => $value) {
     $ShowBook[$key] = new book($value);
   }
 
-
+// Manager to User and Show in views
 $UserManager = new userManager;
 
   $ShowUser = $UserManager->getUser();
@@ -43,7 +45,7 @@ $UserManager = new userManager;
   }
 
 
-
+// Sort all Book with DroopDown
 
   if(isset($_POST['search']))
 {

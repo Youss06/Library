@@ -12,7 +12,7 @@ protected $bd;
   }
 
   // Constructeur
-
+// Function to recovery DataBase
 public function add(book $recovery ){
   $q = $this->getBdd()->prepare('INSERT INTO Book(title, category, author, available, summary)
   VALUES(:title, :category, :author, :available, :summary)');
@@ -36,6 +36,7 @@ public function getShowBook(){
   return $donnees;
 }
 
+// function to Show Summary
 public function ShowSummary($id){
     $q = $this->getBdd()->prepare ('SELECT * FROM Book WHERE id = :id');
 
@@ -45,7 +46,7 @@ public function ShowSummary($id){
 }
 
 
-
+// Function to Sort all Book
 
 public function try($category)
       {
@@ -61,6 +62,7 @@ public function try($category)
         return $ShowBook;
       }
 
+// Function To Update
 
   public function Update($book)
         {
