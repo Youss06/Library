@@ -130,8 +130,8 @@ include("template/header.php");
      <?php foreach ($ShowBook as $info) {
          ?>
 
-  <div class="col-lg-4">
-    <div class="card " style="width: 20rem;">
+  <div class="col-lg-4 mb-4">
+    <div class="card ">
     <div class="card-block">
       <h3 class="card-title"><?php echo $info->getSummary(); ?></h3>
     </div>
@@ -155,7 +155,7 @@ include("template/header.php");
 
 <section class="section Fourthsection" id="rendre">
   <h2>Emprunter/Rendre</h2>
-  <div class="form-group">
+  <div class="form-group ">
   <label for="exampleInputEmail1">Titre de l'ouvrage</label>
   <input type="text" class="form-control" name="name" id="formGroupExampleInput" placeholder="Titre">
   <small id="emailHelp" class="form-text text-muted">Veuillez indiquer le titre de l'ouvrage</small>
@@ -198,8 +198,8 @@ include("template/header.php");
    <div class="row">
      <?php foreach ($ShowUser as $info) {
          ?>
-    <div  class="col-lg-4">
-    <div class="card" style="width: 20rem;">
+    <div  class="col-lg-4 mb-4">
+    <div class="card">
     <div class="card-block">
       <p class="card-text">Nom : <?php echo $info->getName(); ?></p>
       <p class="card-text">Prénom : <?php echo $info->getFirstName(); ?></p>
