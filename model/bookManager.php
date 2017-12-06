@@ -62,4 +62,13 @@ public function try($category)
       }
 
 
+  public function Update($book)
+        {
+          $q = $this->getbdd()->prepare ('UPDATE Book SET available = :available WHERE id = :id');
+          $q->bindValue(':id', $book->getId());
+          $q->bindValue(':available', $book->getAvailable());
+          $q->execute();
+         }
+
+
 }

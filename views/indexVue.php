@@ -25,12 +25,12 @@ include("template/header.php");
     <option value="roman">roman</option>
     <option value="fantastique">fantastique</option>
     <option value="bd">bd</option>
-    <option value="action">action</option>
+    <option value="humour satirique">Humour Satirique</option>
   </select>
  </div>
- <input type="submit" name="search" value="search">
- </form>
- <a href="index.php">Tout les Ouvrages</a>
+ <a href="index.php" class="btn btn-secondary mb-4">Tout les Ouvrages</a>
+ <input type="submit" class="btn btn-secondary mb-4" name="search" value="Rechercher">
+</form>
  </div>
 
 <div class="container">
