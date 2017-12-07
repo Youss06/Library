@@ -53,5 +53,17 @@ $UserManager = new userManager;
 }
 
 
+// call function for update object
+if (isset($_POST['submitUpdate'])){
+
+ $update = $manager->get($_POST['id']);
+
+ if(isset($_POST['available'])){
+    $update-> setAvailable($_POST['available']);
+  }
+  $manager->getUpdate($update);
+}
+
+
   include ("../views/indexVue.php");
   ?>

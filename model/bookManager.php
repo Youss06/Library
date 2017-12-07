@@ -73,4 +73,14 @@ public function try($category)
          }
 
 
+         // Execute a UPDATE request database
+         public function getUpdate($book)
+           {
+             $q = $this->bdd->prepare ('UPDATE Book SET available = :available WHERE id = :id');
+             $q->bindValue(':id', $book->getId());
+             $q->bindValue(':available', $book->getAvailable());
+             $q->execute();
+            }
+
+
 }
