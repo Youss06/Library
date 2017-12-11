@@ -5,6 +5,9 @@
     <title>Library</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <script src="../assets/js/bootstrap.js"></script>
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
 
   </head>
